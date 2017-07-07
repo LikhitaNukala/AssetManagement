@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0DA1AD">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_important_devices_black_48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <View
+        android:layout_width="319dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"/>
+    <EditText android:id="@+id/inputSignUpEmail"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:hint="Email"
+        android:textColorHint="#E1E9EE"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        />
+    <EditText
+        android:id="@+id/inputSignUpPin"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:hint="PIN"
+        android:textColorHint="#E1E9EE"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:inputType="numberPassword"
+        />
+    <EditText
+        android:id="@+id/inputConfirmPin"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:hint="Confirm Pin"
+        android:textColorHint="#E1E9EE"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:inputType="numberPassword"
+        />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:onClick="onSubmitClick"
+            />
+
+
+
+
+</LinearLayout>
